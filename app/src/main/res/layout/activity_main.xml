@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Space android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="201dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/walmartlogo"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/walmart2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#302E2E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/em"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="352dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:background="@drawable/et_style"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="3dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/pass"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="349dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:background="@drawable/et_style"
+        android:inputType="textEmailAddress"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/forgotPasswordLabel"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:autoLink="all"
+        android:clickable="true"
+        android:text="@string/forgotPassword"
+        android:textSize="17sp" />
+
+    <Space android:layout_width="match_parent"
+        android:layout_height="130dp"/>
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="349dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        app:backgroundTint="@color/light_blue"
+        android:onClick="authenticate"
+        android:textAllCaps="false"
+        android:text="Sign in"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/createAccountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginBottom="12dp"
+        android:layout_gravity="center"
+        android:text="@string/accountLabel" />
+
+    <Button
+        android:id="@+id/createAcc"
+        android:layout_width="349dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        app:backgroundTint="@color/white"
+        android:onClick="click"
+        android:text="Create a new account"
+        android:textColor="#2196F3"
+        android:textSize="20sp" />
+
+</LinearLayout>
