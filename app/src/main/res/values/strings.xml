@@ -6,4 +6,8 @@
     <string name="forgotPassword">Forgot password?</string>
     <string name="accountLabel">Don\'t have an account?</string>
     <string name="walmartlogo">walmartLogo</string>
+    <string name="electronics">Electronics</string>
+    <string name="color_color">Color: color</string>
+    <string name="walmart_number_1231">Walmart Number: 3331</string>
+    <string name="item_description_nasdfad">Item Description:HP Flyer Silver 15.6" Laptop. Nice laptop Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
 </resources>

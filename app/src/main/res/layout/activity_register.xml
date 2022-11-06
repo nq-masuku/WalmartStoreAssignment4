@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Register">
 
     <Space android:layout_width="match_parent"
         android:layout_height="30dp"/>
@@ -25,7 +25,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/signup"
+        android:text="Create your account"
         android:textSize="30sp"
         android:gravity="center"
         android:textColor="#302E2E"
@@ -37,16 +37,69 @@
     <Space android:layout_width="match_parent"
         android:layout_height="30dp"/>
 
+
     <TextView
-        android:id="@+id/emailLabel"
+        android:id="@+id/req"
         android:layout_width="333dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/em"
+        android:text="* required field"
+        android:textStyle="bold"
+        android:layout_marginBottom="17dp"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/fname"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="First name*"
         android:textSize="17sp" />
 
     <EditText
-        android:id="@+id/editTextEmail"
+        android:id="@+id/fnamev"
+        android:layout_width="352dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:background="@drawable/et_style"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingBottom="3dp"
+        android:layout_marginBottom="23dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/lname"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Last name*"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/lnamev"
+        android:layout_width="352dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:background="@drawable/et_style"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingBottom="3dp"
+        android:layout_marginBottom="23dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Email address*"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/emailV"
         android:layout_width="352dp"
         android:layout_height="51dp"
         android:layout_gravity="center"
@@ -55,72 +108,45 @@
         android:importantForAutofill="no"
         android:inputType="textEmailAddress"
         android:paddingBottom="3dp"
+        android:layout_marginBottom="23dp"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/passwordLabel"
-        android:layout_width="335dp"
+        android:id="@+id/password"
+        android:layout_width="333dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/pass"
+        android:text="password*"
         android:textSize="17sp" />
 
     <EditText
-        android:id="@+id/editTextPassword"
-        android:layout_width="349dp"
+        android:id="@+id/passwordv"
+        android:layout_width="352dp"
         android:layout_height="51dp"
         android:layout_gravity="center"
         android:ems="10"
         android:background="@drawable/et_style"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
+        android:paddingBottom="3dp"
+        android:layout_marginBottom="43dp"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <TextView
-        android:id="@+id/forgotPasswordLabel"
-        android:layout_width="162dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:autoLink="all"
-        android:clickable="true"
-        android:onClick="reset"
-        android:text="@string/forgotPassword"
-        android:textSize="17sp" />
 
-    <Space android:layout_width="match_parent"
-        android:layout_height="130dp"/>
 
-    <Button
-        android:id="@+id/signin"
-        android:layout_width="349dp"
-        android:layout_height="51dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="40dp"
-        app:backgroundTint="@color/light_blue"
-        android:onClick="authenticate"
-        android:textAllCaps="false"
-        android:text="Sign in"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/createAccountLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:layout_marginBottom="12dp"
-        android:layout_gravity="center"
-        android:text="@string/accountLabel" />
+
 
     <Button
         android:id="@+id/createAcc"
         android:layout_width="349dp"
         android:layout_height="51dp"
         android:layout_gravity="center"
-        android:textAllCaps="false"
-        app:backgroundTint="@color/white"
+        app:backgroundTint="@color/light_blue"
         android:onClick="create"
-        android:text="Create a new account"
-        android:textColor="#2196F3"
+        android:textAllCaps="false"
+        android:text="Create account"
+        android:textColor="@color/white"
         android:textSize="20sp" />
 
 </LinearLayout>
