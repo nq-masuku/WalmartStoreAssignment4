@@ -10,10 +10,10 @@
 <table border="0">
   
     <tr>
-        <td><img src="screenshots/snap1.PNG" width="150" /></td>
-        <td><img src="screenshots/snap2.PNG" width="150" /></td>
-        <td><img src="screenshots/snap3.PNG" width="150" /></td>
-        <td><img src="screenshots/snap4.PNG" width="150" /></td>
+        <td><img src="screenshots/snap5.PNG" width="150" /></td>
+        <td><img src="screenshots/snap6.PNG" width="150" /></td>
+        <td><img src="screenshots/snap7.PNG" width="150" /></td>
+        <td><img src="screenshots/snap8.PNG" width="150" /></td>
     </tr>
 </table>
 
