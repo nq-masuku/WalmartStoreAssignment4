@@ -1,6 +1,6 @@
 <p align="center">
     <img src="android_logo.png" width="150" />
-    <h2 align="center"> CS473-MDP - Mobile Device Programming </h2>
+    <h2 align="center"> MDP - Mobile Device Programming </h2>
     
 </p>
 
